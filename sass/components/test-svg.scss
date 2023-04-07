@@ -1,0 +1,17 @@
+svg {
+  #line64-47 {
+    stroke-dasharray: 100;
+    stroke-dashoffset: 0;
+    animation: dash 3s linear;
+  }
+
+  @keyframes dash {
+    from {
+      stroke-dashoffset: 100;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+}
+

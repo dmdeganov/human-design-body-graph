@@ -1,0 +1,8 @@
+.spleen {
+  justify-content: space-between;
+  transform: rotate(90deg);
+  span{
+    transform: rotate(-90deg);
+  }
+  @include side-triangle-gates;
+}
