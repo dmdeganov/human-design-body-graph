@@ -1,7 +1,6 @@
 import React from 'react';
 import {Ajna, GCenter, Head, Heart, Root, Sacral, Solar, Spleen, Throat} from "./centers";
 
-
 const BodyGraphGrid = () => {
 
   return (
