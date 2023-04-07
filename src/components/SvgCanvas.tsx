@@ -15,7 +15,7 @@ type SvgCanvasProps = {
 
 const SvgCanvas = ({width, height, allGatesCoords, areAllGatesRendered, activeGates}: SvgCanvasProps) => {
   return (
-    <svg width={width} height={height - 1} style={{position: 'absolute', top: 0, left: 0, zIndex: -10}}>
+    <svg width={width} height={height} className="svg-canvas">
       {areAllGatesRendered &&
         allPossibleLines.map(([gateFrom, gateTo]) => {
           const gateFromCoords = allGatesCoords[gateFrom];
