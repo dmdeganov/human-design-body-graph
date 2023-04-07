@@ -6,16 +6,14 @@ import ActiveLine from './lines/ActiveLine';
 import {AllGatesCoords} from '../App';
 
 type SvgCanvasProps = {
-  width: number;
-  height: number;
   allGatesCoords: AllGatesCoords;
   areAllGatesRendered: boolean;
   activeGates: number[];
 };
 
-const SvgCanvas = ({width, height, allGatesCoords, areAllGatesRendered, activeGates}: SvgCanvasProps) => {
+const SvgCanvas = ({allGatesCoords, areAllGatesRendered, activeGates}: SvgCanvasProps) => {
   return (
-    <svg width={width} height={height} className="svg-canvas">
+    <svg width={500} height={704} className="svg-canvas">
       {areAllGatesRendered &&
         allPossibleLines.map(([gateFrom, gateTo]) => {
           const gateFromCoords = allGatesCoords[gateFrom];

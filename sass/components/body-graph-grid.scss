@@ -8,6 +8,7 @@
   justify-items: center;
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
+  position: relative;
 
   .head {
     grid-column: 2/3;
