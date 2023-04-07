@@ -5,7 +5,6 @@ type BodyGraphGripProps = {
   children: React.ReactElement;
 };
 
-// eslint-disable-next-line react/display-name
 function BodyGraphGridInner(props: BodyGraphGripProps, ref: ForwardedRef<HTMLDivElement | null>) {
   return (
     <div className="body-graph-grid" ref={ref}>
@@ -25,7 +24,6 @@ function BodyGraphGridInner(props: BodyGraphGripProps, ref: ForwardedRef<HTMLDiv
   );
 }
 
-// eslint-disable-next-line react/display-name
 const BodyGraphGrid = forwardRef(BodyGraphGridInner);
 
 export default BodyGraphGrid;
