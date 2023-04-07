@@ -59,9 +59,10 @@
     grid-row: 6/7;
   }
   span {
-    //display: inline-block;
-    //border: 1px solid red;
-    &.gate-active{
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+    &.gate-active {
       color: $fc-active;
     }
   }
