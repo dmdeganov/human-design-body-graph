@@ -7,14 +7,7 @@ function onWindowSizeChange(onChange: () => void) {
 }
 
 const getWindowWidthSnapshot = () =>
-  Math.max(
-    document.body.scrollWidth,
-    document.documentElement.scrollWidth,
-    document.body.offsetWidth,
-    document.documentElement.offsetWidth,
-    document.body.clientWidth,
-    document.documentElement.clientHeight,
-  ) - 0.1;
+  window.innerWidth - 0.1;
 
 const getWindowHeightSnapshot = () =>
   Math.max(
