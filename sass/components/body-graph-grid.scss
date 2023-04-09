@@ -69,20 +69,19 @@
     }
   }
 
-  @media (max-width: 600px){
-    grid-template-columns: 1fr 1fr 1fr;
-    .spleen{
-      margin-right: auto;
-    }
-    .solar{
-      margin-left: auto;
-    }
-    & + .button-primary{
+  @media (max-width: 600px) {
+    & + .button-primary {
       top: 16px;
       right: 16px;
     }
   }
-  @media (max-width: 532px){
+  @media (max-width: 532px) {
     width: auto;
+    .spleen {
+      margin-right: auto;
+    }
+    .solar {
+      margin-left: auto;
+    }
   }
 }
