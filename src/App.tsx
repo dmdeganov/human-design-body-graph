@@ -15,7 +15,7 @@ export const ActiveGatesContext = React.createContext<number[]>([]);
 const App = () => {
   const [allGatesCoords, setAllGatesCoords] = useState<AllGatesCoords>({});
   const [activeGates, setActiveGates] = useState<number[]>([]);
-  const {width, height} = usePageSize();
+  const {width} = usePageSize();
   const bodyGraphGridRef: React.RefObject<HTMLDivElement | null> = useRef(null);
 
   const areAllGatesRendered = Object.keys(allGatesCoords).length === 64;
@@ -36,7 +36,7 @@ const App = () => {
     if (!bodyGraphGridRef.current) return;
     const svgXOffset = bodyGraphGridRef.current.getBoundingClientRect().x
     setAllGatesCoords(getAllGatesCoords(svgXOffset));
-  }, [width, height]);
+  }, [width]);
 
 
   return (

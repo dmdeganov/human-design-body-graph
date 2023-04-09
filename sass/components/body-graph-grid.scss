@@ -4,6 +4,7 @@
   color: $fc-primary;
   margin: 0 auto;
   max-width: 500px;
+  height: 704px;
   padding-top: 16px;
   justify-items: center;
   display: grid;
@@ -66,5 +67,22 @@
     &.gate-active {
       color: $fc-active;
     }
+  }
+
+  @media (max-width: 600px){
+    grid-template-columns: 1fr 1fr 1fr;
+    .spleen{
+      margin-right: auto;
+    }
+    .solar{
+      margin-left: auto;
+    }
+    & + .button-primary{
+      top: 16px;
+      right: 16px;
+    }
+  }
+  @media (max-width: 532px){
+    width: auto;
   }
 }
